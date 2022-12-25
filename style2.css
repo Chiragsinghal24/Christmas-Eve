@@ -1,0 +1,55 @@
+audio{
+    display: none;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    background: url(christmas.jpg)no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.snow, .snow2{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(snow22.png);
+    background-position: 0 0;
+}
+
+.snow{
+    background-size: 30%;
+    animation: snowfall 30s linear infinite;
+}
+
+.snow2{
+    background-size: 30cm;
+    animation: snowfall 30s linear infinite;
+    opacity: 0.5;
+}
+
+.text{
+    color: black;
+    text-align: center;
+    /* font-size: 1.5em; */
+}
+
+.text h1{
+    font-family: 'Pushster', cursive;
+    font-size: 5em;
+}
+
+.text p{
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes snowfall{
+    100%{ background-position: 70em 70em;}
+}
